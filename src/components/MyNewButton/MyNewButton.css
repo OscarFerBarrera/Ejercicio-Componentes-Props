@@ -1,0 +1,14 @@
+.Header{
+    color: red;
+}
+
+.my-button{
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #e80b55;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+}

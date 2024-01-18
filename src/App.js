@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import ListPhones from './components/Phones/Phones'
+import Messages from './components/Messages/Messages';
+import MyNewButton from './components/MyNewButton/MyNewButton'
+import './App.css'; 
+
+
+const showAlert1 = () => {
+  alert("Eyyyy!!");
+}
+const showAlert2 = () => {
+  alert("Que tal!!");
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ListPhones></ListPhones>
+
+      <h1 className="HeaderMessage">Mensajes</h1>
+      <Messages name="Nekane"></Messages>
+      <Messages name="Oscar"></Messages>
+
+      <h1 className="Header">Botones</h1>
+      <MyNewButton handleClick={showAlert1} text="Dale!"></MyNewButton>
+      <MyNewButton handleClick={showAlert2} text="Ok"></MyNewButton>
     </div>
   );
 }
